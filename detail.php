@@ -51,7 +51,7 @@ $result=$conn->query($sql);
 
    
     <h1>Detail list of Person which has id:  <?php echo  $id ; ?></h1>
-          <form action="" method="get">
+        
 <div class="container1">
 
     
