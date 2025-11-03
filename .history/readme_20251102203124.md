@@ -1,0 +1,125 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $full_name = $_POST["full_name"];
+
+  // 1. Check if empty
+  if (empty($full_name)) {
+    echo "<p class='error'>Full name is required.</p>";
+  }
+  // 2. Check only letters and spaces
+  elseif (!preg_match("/^[A-Za-z\s]+$/", $full_name)) { //preg_match() is a PHP function that checks if a string (like a name, phone, or email) matches a pattern,The “pattern” is written using regular expressions (called regex).
+It’s like a rule that defines what kind of characters are allowed.
+    echo "<p class='error'>Full name should contain only letters and spaces.</p>";
+  }
+  // 3. Check length
+  elseif (strlen($full_name) < 3) {
+    echo "<p class='error'>Full name should be at least 3 characters long.</p>";
+  }
+  elseif (strlen($full_name) > 30) {
+    echo "<p class='error'>Full name should not exceed 30 characters.</p>";
+  }
+  else {
+    echo "<p class='success'>Full name is valid!</p>";
+  }
+}
+?>
+//preg_match("/^[A-Za-z\s]+$/", $full_name)
+Let’s decode it:
+
+/ ... / → these slashes wrap the pattern
+
+^ → means “start of string”
+
+[A-Za-z\s]+ →
+
+A-Z = uppercase letters
+
+a-z = lowercase letters
+
+\s = spaces
+
++ = one or more characters allowed
+
+$ → means “end of string”
+
+^[A-Za-z]+(?: [A-Za-z]+)*$
+padding: 10px 20px;       /* top/bottom 10px, left/right 20px */
+padding: 5px 10px 15px;   /* top 5px, left/right 10px, bottom 15px */
+padding: 5px 10px 15px 20px; /* top, right, bottom, left */
+![alt text](image.png)
+box-shadow: horizontal-offset vertical-offset blur-radius color;
+
+he <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+A <span> element which is used to color a part of a text:
+
+<p>My mother has <span style="color:blue">blue</span>
+
+Sure! Let’s explain **`block`**, **`inline`**, and **`inline-block`** in the simplest way — easy to remember for viva.
+
+---
+
+### **1️⃣ `display: block;`**
+
+* Takes **full width** of its container (like a `<div>`).
+* Always starts on a **new line**.
+* You can set **width, height, padding, margin**.
+
+**Example:**
+
+```html
+<div style="display:block; background:lightblue;">Block Element</div>
+```
+
+✅ Looks like a **full-width box**.
+
+---
+
+### **2️⃣ `display: inline;`**
+
+* Takes **only as much width as needed**.
+* **Does NOT start a new line** (stays in same line).
+* **Cannot set width or height**.
+* Padding/margin works **only horizontally**, not vertically.
+
+**Example:**
+
+```html
+<span style="display:inline; background:yellow;">Inline Element</span>
+<span style="display:inline; background:orange;">Inline Element 2</span>
+```
+
+✅ Both appear **side by side**.
+
+---
+
+### **3️⃣ `display: inline-block;`**
+
+* Combines **block** and **inline** features:
+
+  * Can **set width and height** like block.
+  * Can appear **side by side** like inline.
+
+**Example:**
+
+```html
+<div style="display:inline-block; width:100px; height:50px; background:green;">Inline-block</div>
+<div style="display:inline-block; width:100px; height:50px; background:red;">Inline-block</div>
+
+
+> “`inline-block` is used for menu items so they stay **in one line** but we can still control their **size and padding**.”
+
+---
+
+If you want, I can **draw a simple visual diagram** showing block, inline, and inline-block — makes it very easy to remember in viva.
+
+Do you want me to do that?
+
+
+Flex vs Block vs Inline-block
+
+block → element takes full width, starts on a new line (div by default).
+
+inline-block → element acts like inline (same line), but can set width/height.
+
+flex → container mode that allows flexible alignment of children horizontally or vertically.
+

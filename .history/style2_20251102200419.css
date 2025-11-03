@@ -1,0 +1,102 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #869CA3;
+  color: #333;
+}
+
+/* Main container for forms / content */
+.container1 {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #869CA3;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+label span { color: red; } /* required star */
+
+/* Form fields */
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  background-color: #869CA3;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover, input[type="submit"]:hover {
+  background-color: #7498a3;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0077b6;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #869CA3;
+  color: black;
+  font-size: 14px;
+}
+
+/* Status select small visual hints (kept simple) */
+select[name="status"] { background: #f8f9fa; }

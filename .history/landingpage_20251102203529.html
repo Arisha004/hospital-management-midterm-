@@ -1,0 +1,113 @@
+
+<html>
+<head>
+  <title>Appointment Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .container1 { width: 22%;margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  h2 {  color: #007bff; }
+    button{
+  display: inline-block;
+  background-color: #869CA3;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+   text-align: center;
+}
+
+
+button:hover {
+  background-color: #7498a3;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Hospital Appointment Management System</div>
+    <nav>
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.php">Signup</a></li>
+        <li><a href="login.php">Login</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+   
+  <section class="landing">
+      <div class="right"></div>
+    <div class="left">
+      <h1>Manage Your Appointments Effortlessly</h1>
+      <p>Stay organized and save time by booking and managing all your appointments in one place.</p>
+      <a href="signup.php" class="btn">Signup to Book An Appointment</a>
+    </div>
+  
+  </section>
+  
+
+   
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-content">
+        <h2>About Appointment Manager</h2>
+        <p>Appointment Manager helps individuals and businesses organize bookings, all in single place.</p>
+        <ul class="features">
+              <li><strong> Login & Signup:</strong> Users can create accounts and log in safely with  passwords.</li>
+<li><strong>Quick Appointment Booking:</strong> Book appointments easily using a simple form with date, time, and add message.</li>
+<li><strong>Automatic Notifications:</strong> We receive confirmation messages after booking appointments.</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+<section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback about our Appointment Manager, feel free to reach out!</p>
+
+      <form action="insertcontactform.php" method="post" class="contact-form">
+        <div class="form-group">
+          <label>Full Name <span>*</span></label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="^[A-Za-z]{3,}( [A-Za-z]+)?$" title="Full name should contain only letters and spaces, and must be at least 3 characters long.">
+         
+        </div>
+
+        <div class="form-group">
+          <label>Email Address <span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" title="Please enter a valid email address, e.g. example@gmail.com." required>
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number<span>*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="03XXXXXXXXX" required pattern="[0-9]{11}" title="Enter 11-digit number only">
+        </div>
+
+        <div class="form-group">
+          <label>Message <span>*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required  pattern=".*\S.*" minlength="10"  title="Message must be at least 10 characters long.Cannot enter only spaces"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+</section>
+
+     
+  
+  <footer>
+    <p> @2025 Appointment Management System , Made by Arisha Mumtaz(2312358)</p>
+  </footer>
+</body>
+</html>
