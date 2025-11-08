@@ -253,13 +253,12 @@ Its children (e.g., .left and .right) automatically become flex items.flex items
 }
 
 
-.landing .right ,.landingabout .rightabout {
+.landing .right ,.landingabout .right {
   width:700px;
   background:url(images/pic1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 
@@ -339,9 +338,9 @@ footer {
 }
 
 .container.about-inner {
-  padding: 50px 20px 20px 0px;
+  padding: 90px 20px 20px 0px;
   background-color: #fff;
-  margin: 20px auto;
+  margin: 40px auto;
   width: 1000px;
   border-radius: 10px;
  

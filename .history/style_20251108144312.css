@@ -253,13 +253,12 @@ Its children (e.g., .left and .right) automatically become flex items.flex items
 }
 
 
-.landing .right ,.landingabout .rightabout {
+.landing .right ,.landingabout .right {
   width:700px;
   background:url(images/pic1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 

@@ -1,0 +1,5 @@
+<input type="radio" name="contact_method" value="Email"> Email
+<input type="radio" name="contact_method" value="Phone"> Phone
+$radio=$_post['contact_method];
+database col add 
+structure mein jaakr

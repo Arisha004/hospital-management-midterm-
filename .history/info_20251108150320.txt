@@ -1,0 +1,2 @@
+<input type="radio" name="contact_method" value="Email"> Email
+<input type="radio" name="contact_method" value="Phone"> Phone

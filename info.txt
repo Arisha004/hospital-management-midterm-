@@ -1,0 +1,18 @@
+<input type="radio" name="contact_method" value="Email"> Email
+<input type="radio" name="contact_method" value="Phone"> Phone
+$radio=$_post['contact_method];
+database col add 
+structure mein jaakr
+insert query update 
+
+
+<input type="radio" name="gender" value="Male"> Male  
+<input type="radio" name="gender" value="Female"> Female  
+<input type="radio" name="gender" value="Other"> Other  
+
+$gender = $_POST['gender']; // gives "Female"
+
+
+ echo "<td><a href='detail.php?id=$items[id],name=$items[full_name]'>More Info</a><br><br>
+   ALTER TABLE table_name
+ADD COLUMN column_name datatype;
