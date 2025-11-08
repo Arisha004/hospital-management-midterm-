@@ -17,9 +17,8 @@ This is a **Hospital Appointment Management System** built with **HTML, CSS, PHP
 
 ## How to Run
 1. Install **XAMPP** and start Apache & MySQL.  
-2. Import the provided database `.sql` file into **phpMyAdmin**.  
-3. Place the project folder in `htdocs` directory of XAMPP.  
-4. Open your browser and go to `http://localhost/<project-folder-name>`  
+2. Place the project folder in `htdocs` directory of XAMPP.  
+3. Open your browser and go to `http://localhost/<project-folder-name>`  
 
 This project demonstrates the full **CRUD workflow** and basic user authentication, making it easy to manage hospital appointments.  
 
